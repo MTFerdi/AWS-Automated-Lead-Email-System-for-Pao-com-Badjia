@@ -1,5 +1,19 @@
 🟧 AWS Automated Lead & Email System for Pão Com Badjia
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=for-the-badge&logo=github)](https://mtferdi.github.io/AWS-Automated-Lead-Email-System-for-Pao-com-Badjia/)
+
+### 🔗 Links Rápidos
+
+- 🌐 **Live Demo (GitHub Pages)**  
+  https://mtferdi.github.io/AWS-Automated-Lead-Email-System-for-Pao-com-Badjia/
+
+- 📦 **Repositório GitHub**  
+  https://github.com/MTFerdi/AWS-Automated-Lead-Email-System-for-Pao-com-Badjia
+
+- 📨 **Arquitetura e Lambda Function**  
+  Consulte a pasta `/lambda`
+
+
 This repository contains a fully serverless lead capture and email automation system built for Pão Com Badjia, designed to handle customer registrations, store leads, and send automated branded emails using AWS.
 
 The entire system is live in production and optimized for extremely low cost while ensuring reliability, scalability, and high deliverability.
@@ -169,4 +183,6 @@ Ferdinando Torres
 Cloud & Web Developer
 Creator of the Pão Com Badjia automated onboarding system.
 
+
 Feel free to connect or reach out for collaborations or similar projects.
+
