@@ -1,87 +1,864 @@
 <!DOCTYPE html>
+
 <html lang="pt">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pão com Badjia – Black Friday</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="img/icon-192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="img/icon-512.png" />
-
-    <!-- Manifest -->
-    <link rel="manifest" href="manifest.webmanifest" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Pão com Badjia — Black Friday Edição Nº 11</title>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="icon-192.png" rel="apple-touch-icon" sizes="192x192"/>
+<link href="icon-512.png" rel="apple-touch-icon" sizes="512x512"/>
+<link href="manifest.webmanifest" rel="manifest"/>
+<!-- SEO básica -->
+<meta content="Landing page oficial da Black Friday da revista Pão com Badjia. Edição Nº 11 digital de 1000,00 MT por apenas 25,00 MT por tempo limitado." name="description"/>
+<meta content="index,follow" name="robots"/>
+<link href="https://paocombadjia.com/" rel="canonical"/>
+<!-- Open Graph / Facebook -->
+<meta content="website" property="og:type"/>
+<meta content="Pão com Badjia — Black Friday Edição Nº 11" property="og:title"/>
+<meta content="Garanta a Edição Nº 11 digital da revista Pão com Badjia por apenas 25,00 MT na Black Friday. Oferta válida por tempo limitado." property="og:description"/>
+<meta content="https://paocombadjia.com/" property="og:url"/>
+<meta content="https://paocombadjia.com/Capa-optimized.jpg" property="og:image"/>
+<meta content="pt_PT" property="og:locale"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Pão com Badjia — Black Friday Edição Nº 11" name="twitter:title"/>
+<meta content="Edição Nº 11 digital de 1000,00 MT por apenas 25,00 MT na Black Friday. Reserve já o seu desconto." name="twitter:description"/>
+<meta content="https://paocombadjia.com/Capa-optimized.jpg" name="twitter:image"/>
+<!-- Google Analytics GA4 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-RMZ0H5ZZF6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RMZ0H5ZZF6');
+</script>
+<link href="styles.css" rel="stylesheet"/>
 </head>
-
 <body>
+<!-- NAV -->
+<nav>
+<a class="logo" href="#">Pão com Badjia</a>
+<ul>
+<li><a href="#registo">Reservar</a></li>
+<li><a href="#faqs">FAQs</a></li>
+<li><a href="https://wa.me/351938642679" target="_blank">Apoio</a></li>
+</ul>
+</nav>
+<!-- STRIPE PROMO -->
+<div class="promo-stripe">
+    Disponível para compra de 18 a 20 de Dezembro de 2025. Oferta válida por tempo limitado. Reserve já! 
+  </div>
+<div class="carousel-dots"></div>
+<div class="spacer"></div>
+<div class="container">
+<!-- HERO -->
+<header class="hero">
+<div class="hero-text">
+<h1>
+<span class="bf">
+<span class="black">BL</span><span class="red">A</span><span class="black">CK FRIDAY</span>
+</span>
+<span class="title">PÃO COM BADJIA</span>
+<span class="edition">Edição Nº 11 – Em Formato Digital</span>
+</h1>
+<div class="price">
+<span class="old">1000,00 MT</span>
+<span class="new">25,00 MT</span>
+</div>
+<button class="btn-primary" onclick="document.getElementById('registo').scrollIntoView({behavior:'smooth'});" type="button">
+          GARANTIR O MEU DESCONTO AGORA!
+          <span class="subline">
+<s>1000,00 MT</s> — Pague apenas 25,00 MT na Black Friday
+          </span>
+</button>
+<div class="countdown" id="countdown">
+<div class="time-box">
+<span class="time-number" id="days">00</span>
+<span class="time-label">Dias</span>
+</div>
+<div class="time-box">
+<span class="time-number" id="hours">00</span>
+<span class="time-label">Horas</span>
+</div>
+<div class="time-box">
+<span class="time-number" id="minutes">00</span>
+<span class="time-label">Minutos</span>
+</div>
+<div class="time-box">
+<span class="time-number" id="seconds">00</span>
+<span class="time-label">Segundos</span>
+</div>
+</div>
+</div>
+<div>
+<picture>
+<source srcset="Capa-optimized.webp" type="image/webp"/>
+<source srcset="Capa-optimized.jpg" type="image/jpeg"/>
+<img alt="Capa da revista Pão com Badjia Edição 11 com feijoada de lulas em destaque" src="Capa-optimized.jpg"/>
+</picture>
+</div>
+</header>
+<section class="carousel-container">
+<div class="carousel-wrapper">
+<button class="carousel-btn prev-btn">❮</button>
+<div class="carousel-track">
+<div class="carousel-item"><img alt="" src="Hero-Carousel-1.jpg"/></div>
+<div class="carousel-item"><img alt="" src="Hero-Carousel-2.jpg"/></div>
+<div class="carousel-item"><img alt="" src="Hero-Carousel-3.jpg"/></div>
+<div class="carousel-item"><img alt="" src="Hero-Carousel-4.jpg"/></div>
+<div class="carousel-item"><img alt="" src="Hero-Carousel-5.jpg"/></div>
+<div class="carousel-item"><img alt="" src="Hero-Carousel-6.png"/></div>
+</div>
+<button class="carousel-btn next-btn">❯</button>
+</div>
+</section>
+<!-- BENEFÍCIOS + FORM -->
+<section class="benefits-form-section">
+<!-- NOVA IMAGEM DA BLACK FRIDAY -->
+<div class="promo-bf-image">
+<img alt="Promoção Black Friday Pão com Badjia" src="BLACK FRIDAY.png"/>
+</div>
+<p class="benefits-intro">
+<span class="hero-extra-purple">
+          Celebre connosco a Black Friday, o Natal e os 15 anos da Pão com Badjia <br/> com um
+        </span>
+<span class="hero-extra-purple"><strong>MEGA DESCONTO!</strong></span> 
+        Adquira a edição Nº 11 da sua revista de culinária favorita em formato digital por apenas 25,00 Meticais!
+      </p>
+<div class="benefits">
+<div class="card">
+<h3>Receitas Passo a Passo</h3>
+<p>As receitas da Pão com Badjia são simples, claras e organizadas. Cada etapa inclui dicas práticas que garantem resultados deliciosos e consistentes, mesmo para iniciantes.</p>
+</div>
+<div class="card">
+<h3>Ingredientes Acessíveis</h3>
+<p>Valorizamos ingredientes do dia a dia dos moçambicanos: acessíveis, próximos e fáceis de encontrar, permitindo explorar sabores tradicionais e internacionais com conforto e praticidade.</p>
+</div>
+<div class="card">
+<h3>Acesso Vitalício</h3>
+<p>Ao adquirir a Edição 11 da sua Pão com Badjia, recebe acesso vitalício à versão digital, podendo ler no seu dispositivo preferido. Sempre que houver novas receitas ou atualizações, você as receberá gratuitamente, mantendo a revista sempre atualizada.</p>
+</div>
+</div>
+<!-- FORM + CHEESECAKE -->
+<section class="form-cheesecake" id="registo">
+<div class="form-image">
+<img alt="Cheesecake de maracujá delicioso" src="Signup-Form-optimized.png"/>
+</div>
+<div class="form-wrap">
+<h3 class="promo-title">Oferta Válida por Tempo Limitado!</h3>
+<h2>Registe-se aqui para garantir o seu desconto</h2>
+<form id="leadForm">
+<div class="form-grid">
+<input name="name" placeholder="Nome completo" required="" type="text"/>
+<input name="email" placeholder="Email" required="" type="email"/>
+<input name="whatsapp" placeholder="WhatsApp" required="" type="tel"/>
+</div>
+<button class="btn-primary" type="submit">
+              GARANTIR O MEU DESCONTO AGORA!
+              <span class="subline">
+<s>1000,00 MT</s> — Pague apenas 25,00 MT na Black Friday
+              </span>
+</button>
+<div class="note">
+              Ao registar-se, concorda em receber um email com o link de download durante a Black Friday.<br/>
+              Os seus dados estão seguros e não serão partilhados.
+            </div>
+</form>
+<!-- Fallback invisível -->
+<div id="thanks" style="display:none; padding-top:10px; color:#16a34a; font-weight:700;">
+            Obrigado! Registo guardado com sucesso.
+          </div>
+</div>
+</section>
+</section>
+<!-- FAQ -->
+<section class="faq-section" id="faqs">
+<h2>Perguntas Frequentes</h2>
+<p class="faq-subtitle">Clique nas perguntas para ver as respostas</p>
+<div class="faq-item">
+<div class="faq-question">O que estou a comprar exatamente?</div>
+<div class="faq-answer">
+          Você está a reservar a possibilidade de adquirir a versão digital da revista Pão com Badjia Edição No 11 a um preço promocional alusivo à Black Friday, a celebração do Natal e aos 15 anos de existência da revista Pão com Badjia.
+          A edição No 11 da revista Pão com Badjia estará disponível para si em formato digital (PDF) e poderá ser lida no seu computador, tablet ou telemóvel.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Por que é que o preço da revista é tão baixo?</div>
+<div class="faq-answer">
+          O preço da versão digital da revista Pão com Badjia é de 1000,00 Meticais. Contudo, por tempo limitado baixamos o preço da revista para democratizar o acesso dos nossos conteúdos e fazer chegar a revista Pão com Badjia a um número maior de pessoas. Por favor, note que o preço promocional é por tempo limitado.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">A revista pode ser impressa?</div>
+<div class="faq-answer">
+          Não. A revista não pode ser impressa devido a questões de direitos autorais.<br/>
+          A Edição No 11 da revista Pão com Badjia está disponível apenas em formato digital para leitura em dispositivos eletrónicos.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Preciso de internet para ler a revista?</div>
+<div class="faq-answer">
+          Não. Depois de fazer o download, o PDF pode ser lido offline, quando e onde quiser.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Quando posso comprar a revista?</div>
+<div class="faq-answer">
+          A promoção especial alusiva à Black Friday estará disponível apenas entre os dias 18 e 20 de Dezembro de 2025.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Como e quando recebo a revista depois do pagamento?</div>
+<div class="faq-answer">
+          Num período máximo de três dias após a compra, receberá um link para download da revista Pão com Badjia diretamente no contacto que fornecer no momento da compra.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Quais são os métodos de pagamento disponíveis?</div>
+<div class="faq-answer">
+          Você pode comprar a revista Pão com Badjia usando M-Pesa ou e-Mola, de forma rápida e segura.<br/><br/>
+<strong>M-Pesa:</strong> 842117185<br/>
+<strong>e-Mola:</strong> 878668130<br/><br/>
+<strong>Notas importantes de segurança:</strong><br/>
+          Estes são os únicos números oficiais de pagamento da Pão com Badjia. Nunca faça pagamentos para outros números, mesmo que alguém se apresente como membro da equipa.<br/>
+          Não enviamos mensagens privadas a pedir pagamentos adicionais, códigos, senhas ou informações pessoais.<br/>
+          Caso receba qualquer contacto suspeito, ignore e reporte imediatamente através do nosso WhatsApp oficial: +351 938 642 679.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">E se eu não gostar da revista?</div>
+<div class="faq-answer">
+          Se por qualquer motivo a revista Pão com Badjia não lhe satisfizer, você tem 30 dias de garantia para solicitar um reembolso total.<br/>
+          Não terá de se justificar, ligue para nós ou envie-nos um email e diga apenas que não gostou da revista.<br/>
+          Nós não só lhe devolveremos o seu dinheiro como também lhe deixaremos ficar com o PDF, sem qualquer obrigação.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Se a revista for actualizada no futuro, devo pagar para ter as actualizações?</div>
+<div class="faq-answer">
+          Não. Todas as futuras receitas e actualizações da Edição 11 da sua Pão com Badjia ser-lhe-ão entregues gratuitamente como parte do seu acesso vitalício.
+        </div>
+</div>
+<div class="faq-item">
+<div class="faq-question">Como entro em contacto para apoio ou dúvidas?</div>
+<div class="faq-answer">
+          Basta enviar uma mensagem para o nosso WhatsApp: +351 938 642 679.<br/>
+          Estamos sempre prontos a ajudar.
+        </div>
+</div>
+</section>
+</div><!-- /container -->
+<!-- FOOTER -->
+<!-- Testimonial Section -->
+<section class="testimonial-section" id="testemunhos">
+<div class="testimonial-wrapper">
+<h2 class="testimonial-title">O que dizem os leitores da Pão com Badjia</h2>
+<p class="testimonial-subtitle">
+      Feedback de pessoas que usam as receitas da revista no dia a dia.
+    </p>
+<div class="testimonial-carousel">
+<button aria-label="Anterior" class="testimonial-arrow arrow-left">‹</button>
+<div class="testimonial-window">
+<div class="testimonial-track">
+<!-- Slide 1 -->
+<div class="testimonial-slide">
+<article class="testimonial-card">
+<div class="testimonial-avatar">
+<img alt="Leitora da revista Pão com Badjia" src="Testimonial-Carousel-1.jpg"/>
+</div>
+<p class="testimonial-text">
+                “Conteúdo de qualidade, muito acima do preço que pagamos. Compro desde a primeira edição e continuo a comprar porque a minha esposa gosta.”
+              </p>
+<p class="testimonial-name">J.A.</p>
+<p class="testimonial-role">Empreendedor</p>
+</article>
+<article class="testimonial-card">
+<div class="testimonial-avatar">
+<img alt="Leitora da revista Pão com Badjia" src="Testimonial-Carousel-2.jpg"/>
+</div>
+<p class="testimonial-text">
+                 "As receitas usam ingredientes que encontro facilmente no mercado e isso para mim faz toda a diferença. Obrigado por partilharem. Continuem."
+              </p>
+<p class="testimonial-name">Esmeralda Policarpo</p>
+<p class="testimonial-role">Relações Públicas</p>
+</article>
+<article class="testimonial-card">
+<div class="testimonial-avatar">
+<img alt="Leitora da revista Pão com Badjia" src="Testimonial-Carousel-3.jpg"/>
+</div>
+<p class="testimonial-text">
+                “A revista é simplesmente fantástica! As receitas são práticas, fáceis de fazer e deliciosas. Uso a revista para ensinar os meus filhos a cozinhar. Muita força!”
+              </p>
+<p class="testimonial-name">Carla Zunguza.</p>
+<p class="testimonial-role">Professora</p>
+</article>
+</div>
+<!-- Slide 2 -->
+<div class="testimonial-slide">
+<article class="testimonial-card">
+<div class="testimonial-avatar">
+<img alt="Leitora da revista Pão com Badjia" src="Testimonial-Carousel-4.jpg"/>
+</div>
+<p class="testimonial-text">
+                “Finalmente uma revista com receitas adaptadas ao nosso dia a dia. Tenho as edições 9 e 10, como faço para ter toda a colecção?”
+              </p>
+<p class="testimonial-name">Mariana Anacleto</p>
+<p class="testimonial-role">Entusiasta de Cozinha</p>
+</article>
+<article class="testimonial-card">
+<div class="testimonial-avatar">
+<img alt="Leitora da revista Pão com Badjia" src="Testimonial-Carousel-5.jpg"/>
+</div>
+<p class="testimonial-text">
+                Comprei a edição número 7 para testar e agora recomendo a toda a família. Parabéns pelo trabalho e pela qualidade das receitas.”
+              </p>
+<p class="testimonial-name">Célia F.</p>
+<p class="testimonial-role">Empresária</p>
+</article>
+<article class="testimonial-card">
+<div class="testimonial-avatar">
+<img alt="Leitora da revista Pão com Badjia" src="Testimonial-Carousel-6.jpg"/>
+</div>
+<p class="testimonial-text">
+                "A revista ajudou‑me a organizar melhor o menu da semana. Menos stress, mais sabor! Para quando a versão impressa?"
+              </p>
+<p class="testimonial-name">Olga Ernesto</p>
+<p class="testimonial-role">Dona de Casa</p>
+</article>
+</div>
+</div>
+</div>
+<button aria-label="Seguinte" class="testimonial-arrow arrow-right">›</button>
+</div>
+<div class="testimonial-dots">
+<button aria-label="Ver primeiro grupo de testemunhos" class="testimonial-dot active" data-index="0"></button>
+<button aria-label="Ver segundo grupo de testemunhos" class="testimonial-dot" data-index="1"></button>
+</div>
+</div>
+</section>
+<!-- CTA FINAL ANTES DO FOOTER -->
+<section class="final-cta-section">
+<div class="final-cta-wrapper">
+<h2 class="final-cta-title">Uma oferta Black Friday que você vai realmente usar…</h2>
+<p class="final-cta-paragraph">
+      Esta não é mais uma típica promoção de Black Friday.<br/><br/>
+      Não estamos aqui para impingir-lhe mil e duzentas receitas que você nunca vai fazer.<br/><br/>
+      Não. Esta é a Pão com Badjia — e estamos a oferecer um desconto simplesmente absurdo.<br/><br/>
+      A maior parte das ofertas Black Friday aparece com “maningue cenas”… Mais cursos, mais ferramentas, mais informação para consumir.<br/><br/>
+      Mas você não precisa de mais informação.<br/><br/>
+      Você não precisa de mais vídeos para assistir ou mais PDFs para acumular no telefone.<br/><br/>
+      Você precisa de <strong>receitas que realmente vai cozinhar</strong>.<br/>
+      Precisa de <strong>ideias práticas para facilitar o dia a dia</strong>.<br/>
+      Precisa de <strong>inspiração para cozinhar melhor para a sua família e brilhar na cozinha</strong>.<br/><br/>
+      E é exatamente isso que encontra na <strong>Edição Nº 11 da Pão com Badjia</strong>.<br/><br/>
+      Não é aprender “sobre culinária”…<br/><br/>
+      É <strong>cozinhar de verdade</strong>, com uma revista pensada para a realidade de quem vive e cozinha em Moçambique.
+    </p>
+<p class="final-cta-highlight"><strong>Tudo isso por apenas 25,00 Meticais durante a Black Friday da Pão com Badjia.</strong></p>
+<button class="btn-primary final-cta-btn" onclick="document.getElementById('registo').scrollIntoView({behavior:'smooth'});">
+      GARANTIR O MEU DESCONTO AGORA!
+      <span class="subline">
+<s>1000,00 MT</s> — Pague apenas 25,00 MT na Black Friday
+      </span>
+</button>
+<a href="https://wa.me/?text=Partilho%20consigo%20a%20promoção%20da%20revista%20Pão%20com%20Badjia%20—%20Edição%2011%20por%2025MT!%20Saiba%20mais%20em%20https://paocombadjia.com"
+   class="whatsapp-share-btn">
+   Partilhar Promoção via WhatsApp
+</a>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <img src="img/Hero-Carousel-1.jpg" alt="Pão com Badjia Promoção" class="hero-img">
-        <img src="img/Hero-Carousel-2.jpg" class="hidden-img">
-        <img src="img/Hero-Carousel-3.jpg" class="hidden-img">
-        <img src="img/Hero-Carousel-4.jpg" class="hidden-img">
-        <img src="img/Hero-Carousel-5.jpg" class="hidden-img">
-        <img src="img/Hero-Carousel-6.png" class="hidden-img">
-    </header>
+</div>
+</section>
+<footer>
+<div class="social-icons">
+<a aria-label="Facebook" href="https://www.facebook.com/paocombadjia" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.02H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.93 8.44-9.93z"></path></svg>
+</a>
+<a aria-label="Instagram" href="https://www.instagram.com/paocombadjia" target="_blank">
+<svg viewbox="0 0 24 24">
+<path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z"></path>
+<path d="M12 7.5A4.5 4.5 0 1112 16.5 4.5 4.5 0 0112 7.5z"></path>
+<circle cx="18.25" cy="6.75" r="1.25"></circle>
+</svg>
+</a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@paocombadjia" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M16 2c.6 2.4 2.2 4.3 4.4 4.9v3.1c-1.6 0-3.1-.5-4.4-1.3v6.9a6.7 6.7 0 11-6.7-6.7c.4 0 .9 0 1.3.1v3.3c-.4-.1-.8-.2-1.3-.2a3.4 3.4 0 103.4 3.4V2h3.3z"></path></svg>
+</a>
+<a aria-label="WhatsApp" href="https://wa.me/351938642679" target="_blank">
+<svg viewbox="0 0 24 24">
+<path d="M12.04 2A9.94 9.94 0 002 11.96c0 1.76.46 3.4 1.26 4.83L2 22l5.34-1.25a10 10 0 104.7-18.75z"></path></svg>
+</a>
+</div>
+<h3 class="about-title">Sobre a Pão com Badjia</h3>
+<div class="about">
+      A Pão com Badjia é mais do que uma revista de culinária: é um espaço de encontro para todos os que vivem a cozinha com paixão. Aqui partilhamos receitas, técnicas e histórias que inspiram quem transforma a culinária numa rotina diária, num hobby criativo, num refúgio terapêutico ou até numa profissão. A nossa missão é democratizar o conhecimento gastronómico, celebrar tradições, abraçar novas influências e aproximar pessoas através da comida porque acreditamos que cada prato tem o poder de ensinar, unir e contar quem somos.
+    </div>
+<br/>
+<div class="footer-links">
+<a class="footer-link" href="#registo">Reservar</a>
+<a class="footer-link" href="#faqs">Perguntas Frequentes</a>
+<a class="footer-link" href="https://wa.me/351938642679" target="_blank">Apoio</a>
+<a class="footer-link" href="#" onclick="openTerms(); return false;">Termos de Uso</a>
+<a class="footer-link" href="#" onclick="openPrivacy(); return false;">Política de Privacidade</a>
+</div>
+<div class="copyright">
+      © 2025 Pão com Badjia. Todos os direitos reservados.
+    </div>
+</footer>
+<!-- MODAIS -->
+<div class="modal-overlay" id="modalTerms"><div class="modal-box"><span class="modal-x" onclick="closeTerms()">×</span>
+<h2>Termos de Uso</h2>
+<p>
+        Ao utilizar este website e ao participar nas campanhas promocionais da Pão com Badjia, você concorda com estes
+        Termos de Uso. Caso não concorde, pedimos que não utilize esta plataforma.
+      </p>
+<p><strong>1. Produto</strong><br/>
+        A revista Pão com Badjia — Edição Nº 11 — é disponibilizada exclusivamente em formato digital (PDF). A revista não
+        pode ser impressa, redistribuída, copiada, vendida ou alterada sem autorização oficial. Todo o conteúdo é protegido
+        por direitos autorais.
+      </p>
+<p><strong>2. Promoção Black Friday</strong><br/>
+        O preço normal da revista digital é 1000,00 MT. Durante a Black Friday (18–20 de Dezembro de 2025), o cliente poderá
+        adquiri-la por apenas 25,00 MT. Este preço é válido exclusivamente durante esse período.
+      </p>
+<p><strong>3. Processo de Compra</strong><br/>
+        1) O utilizador regista-se nesta página.<br/>
+        2) Durante a Black Friday, recebe um email com link seguro para pagamento.<br/>
+        3) Após confirmação, a equipa valida o pagamento.<br/>
+        4) Em até 3 dias úteis, o cliente recebe o link de download da revista.
+      </p>
+<p><strong>4. Contactos Oficiais</strong><br/>
+        Email de apoio: <a href="mailto:apoio@paocombadjia.com">apoio@paocombadjia.com</a><br/>
+        WhatsApp oficial: <a href="https://wa.me/351938642679" target="_blank">+351 938 642 679</a>
+</p>
+<p><strong>5. Política de Reembolso</strong><br/>
+        Todas as compras realizadas na Black Friday têm garantia de reembolso total por 30 dias após a entrega da revista.
+        O cliente não precisa justificar a razão. Mesmo após o reembolso, o cliente mantém acesso ao PDF.
+      </p>
+<p><strong>6. Segurança</strong><br/>
+        A Pão com Badjia nunca solicita códigos, senhas, informações bancárias ou pagamentos adicionais. Pagamentos são feitos
+        apenas para os contactos oficiais listados na página de contactos.
+      </p>
+<div class="modal-close" onclick="closeTerms()">Fechar</div>
+</div>
+</div>
+<div class="modal-overlay" id="modalPrivacy"><div class="modal-box"><span class="modal-x" onclick="closePrivacy()">×</span>
+<h2>Política de Privacidade</h2>
+<p>
+        Respeitamos a sua privacidade. Esta Política explica como tratamos e protegemos os seus dados ao registar-se na
+        campanha da Pão com Badjia.
+      </p>
+<p><strong>1. Dados Recolhidos</strong><br/>
+        • Nome completo<br/>
+        • Email<br/>
+        • WhatsApp<br/>
+        • Data e hora do registo<br/>
+        • Origem da campanha (ex.: Black Friday)
+      </p>
+<p><strong>2. Como utilizamos os seus dados</strong><br/>
+        Os dados são utilizados exclusivamente para:<br/>
+        • Confirmar o registo<br/>
+        • Enviar o link de pagamento durante a Black Friday<br/>
+        • Enviar o link de download após o pagamento<br/>
+        • Suporte ao cliente<br/>
+        • Atualizações futuras da Edição Nº 11<br/>
+        • <strong>Futuras promoções, campanhas e atividades de marketing</strong> da Pão com Badjia (opcional para o utilizador).
+      </p>
+<p><strong>3. Retenção dos Dados</strong><br/>
+        Não existe prazo fixo de retenção de dados. Os dados recolhidos são mantidos enquanto forem úteis para comunicação futura relacionada
+        com os serviços da Pão com Badjia.<br/>
+        O utilizador pode solicitar a remoção dos seus dados da nossa base de dados a qualquer momento.
+      </p>
+<p><strong>4. Direitos do Utilizador</strong><br/>
+        A qualquer momento, o utilizador pode solicitar:<br/>
+        • Remoção dos seus dados<br/>
+        • Cópia ou acesso aos dados armazenados<br/>
+        • Alteração ou atualização dos dados<br/>
+        • Cancelamento de comunicações promocionais
+      </p>
+<p><strong>5. Partilha de Dados</strong><br/>
+        A Pão com Badjia <strong>não vende, partilha ou cede</strong> dados pessoais a terceiros. O tratamento é feito exclusivamente
+        pela equipa interna da marca.
+      </p>
+<p><strong>6. Contacto para Questões de Privacidade</strong><br/>
+        Email: <a href="mailto:apoio@paocombadjia.com">apoio@paocombadjia.com</a><br/>
+        WhatsApp: <a href="https://wa.me/351938642679" target="_blank">+351 938 642 679</a>
+</p>
+<div class="modal-close" onclick="closePrivacy()">Fechar</div>
+</div>
+</div>
+<!-- MODAL DE SUCESSO -->
+<div class="modal-overlay" id="modalSuccess"><div class="modal-box"><span class="modal-x" onclick="closeSuccess()">×</span>
+<h2 class="modal-success-title">Parabéns, o seu registo foi efectuado com sucesso!</h2>
+<p class="modal-success-text">
+        Dentro de instantes vai receber um email ou uma mensagem via WhatsApp a confirmar o seu registo bem como informações adicionais para adquirir a sua Pão com Badjia de forma rápida e segura.
+      </p>
 
-    <!-- Capa -->
-    <section class="capa">
-        <img src="img/Capa-optimized.jpg" alt="Capa da promoção Black Friday Pão com Badjia">
-    </section>
+<p class="modal-success-text">
+        Para informações, dúvidas e/ou esclarecimentos, leia os nossos Termos de Serviço e a nossa Política de Privacidade. Pode ainda contactar-nos via
+        <a href="https://wa.me/351938642679" target="_blank"><strong>WhatsApp</strong></a>
+        ou pelas nossas redes sociais. 
+      </p>
 
-    <!-- Testemunhos -->
-    <section class="testemunhos">
-        <img src="img/Testimonial-Carousel-1.jpg" alt="Cliente 1">
-        <img src="img/Testimonial-Carousel-2.jpg" alt="Cliente 2">
-        <img src="img/Testimonial-Carousel-3.jpg" alt="Cliente 3">
-        <img src="img/Testimonial-Carousel-4.jpg" alt="Cliente 4">
-        <img src="img/Testimonial-Carousel-5.jpg" alt="Cliente 5">
-        <img src="img/Testimonial-Carousel-6.jpg" alt="Cliente 6">
-    </section>
+<p class="modal-success-text">
+        <strong>O seu desconto está garantido!</strong> Obrigado, por fazer parte da família Pão com Badjia. Siga-nos usando os links abaixo e, <strong>POR FAVOR >>> PARTILHE ESTA PROMOÇÃO COM MAIS PESSOAS</strong>.
+      </p>
 
-    <!-- Formulário -->
-    <section class="form-section">
-        <img src="img/Signup-Form-optimized.png" alt="Formulário de pedido">
 
-        <form id="leadForm">
-            <label>Nome:</label>
-            <input type="text" name="nome" required>
+<a href="https://wa.me/?text=Partilho%20consigo%20a%20promoção%20da%20revista%20Pão%20com%20Badjia%20—%20Edição%2011%20por%2025MT!%20Saiba%20mais%20em%20https://paocombadjia.com" class="modal-success-whatsapp-btn">
+Partilhar Promoção via WhatsApp
+</a>
+<div class="modal-success-socials">
+<a aria-label="Instagram" href="https://www.instagram.com/paocombadjia" target="_blank">
+<svg viewbox="0 0 24 24">
+<path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7z"></path>
+<path d="M12 7.5A4.5 4.5 0 1112 16.5 4.5 4.5 0 0112 7.5z"></path>
+<circle cx="18.25" cy="6.75" r="1.25"></circle>
+</svg>
+</a>
+<a aria-label="Facebook" href="https://www.facebook.com/paocombadjia" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 5 3.66 9.14 8.44 9.93v-7.02H7.9v-2.91h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.93 8.44-9.93z"></path></svg>
+</a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@paocombadjia" target="_blank">
+<svg viewbox="0 0 24 24"><path d="M16 2c.6 2.4 2.2 4.3 4.4 4.9v3.1c-1.6 0-3.1-.5-4.4-1.3v6.9a6.7 6.7 0 11-6.7-6.7c.4 0 .9 0 1.3.1v3.3c-.4-.1-.8-.2-1.3-.2a3.4 3.4 0 103.4 3.4V2h3.3z"></path></svg>
+</a>
+</div>
+<p class="modal-success-text">
+<strong>Até já!</strong> <br/> <strong>Ferdinando Torres e Equipa</strong>
+</p>
+<div class="modal-close" onclick="closeSuccess()">Fechar</div>
+</div>
+</div>
+<!-- SCRIPTS -->
+<script>
+    // COUNTDOWN
+    const OFFER_END = new Date("2025-12-18T00:00:00");
+    const daysEl = document.getElementById('days');
+    const hoursEl = document.getElementById('hours');
+    const minutesEl = document.getElementById('minutes');
+    const secondsEl = document.getElementById('seconds');
 
-            <label>WhatsApp:</label>
-            <input type="text" name="whatsapp" required>
+    function pad(n){ return n.toString().padStart(2,'0'); }
 
-            <button type="submit">Reservar</button>
-        </form>
-    </section>
+    function tick() {
+      const now = new Date();
+      let diff = OFFER_END - now;
+      if (diff < 0) diff = 0;
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor(diff % 86400000 / 3600000);
+      const m = Math.floor(diff % 3600000 / 60000);
+      const s = Math.floor(diff % 60000 / 1000);
+      daysEl.textContent = pad(d);
+      hoursEl.textContent = pad(h);
+      minutesEl.textContent = pad(m);
+      secondsEl.textContent = pad(s);
+    }
+    tick();
+    setInterval(tick, 1000);
 
-    <!-- Script principal -->
-    <script>
-        async function sendLead(event) {
-            event.preventDefault();
-            const formData = new FormData(event.target);
+    // FAQ toggle
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const ans = item.querySelector('.faq-answer');
+        const isOpen = ans.style.display === 'block';
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+        ans.style.display = isOpen ? 'none' : 'block';
+      });
+    });
 
-            const response = await fetch("https://YOUR-LAMBDA-ENDPOINT", {
-                method: "POST",
-                body: JSON.stringify({
-                    nome: formData.get("nome"),
-                    whatsapp: formData.get("whatsapp")
-                }),
-            });
+    // SMOOTH SCROLL
+    document.querySelectorAll('a[href="#registo"], a[href="#faqs"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const id = this.getAttribute('href').substring(1);
+        const target = document.getElementById(id);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
 
-            if (response.ok) {
-                alert("Reserva enviada com sucesso!");
-                event.target.reset();
-            } else {
-                alert("Erro! Tente novamente.");
-            }
+    // MODAIS – ABRIR / FECHAR (sem scroll forçado, centralizado)
+    function openTerms() {
+      document.getElementById('modalTerms').style.display = 'flex';
+    }
+    function closeTerms() {
+      document.getElementById('modalTerms').style.display = 'none';
+    }
+
+    function openPrivacy() {
+      document.getElementById('modalPrivacy').style.display = 'flex';
+    }
+    function closePrivacy() {
+      document.getElementById('modalPrivacy').style.display = 'none';
+    }
+
+    function openSuccess() {
+      document.getElementById('modalSuccess').style.display = 'flex';
+    }
+    function closeSuccess() {
+      document.getElementById('modalSuccess').style.display = 'none';
+    }
+
+    // Fechar qualquer modal clicando fora da caixa
+    document.querySelectorAll('.modal-overlay').forEach(overlay => {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+          overlay.style.display = 'none';
+        }
+      });
+    });
+  </script>
+<script>
+    // AWS - DYNAMODB INTEGRATION — usando o deployment "Lead Collector – Black Friday"
+    const API_URL = "https://30z9bn4ut5.execute-api.us-east-1.amazonaws.com/prod/leads";
+
+    const leadForm = document.getElementById("leadForm");
+    const submitBtn = leadForm.querySelector('button[type="submit"]');
+    const submitBtnOriginalHTML = submitBtn.innerHTML;
+
+    leadForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+
+      // Dados enviados para DynamoDB
+      const payload = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        whatsapp: form.whatsapp.value.trim(),
+        source: "black-friday",
+      };
+
+      console.log("A enviar payload:", payload);
+
+      let enviado = false;
+
+      // Estado "A processar..."
+      submitBtn.disabled = true;
+      submitBtn.classList.add("loading");
+      submitBtn.innerHTML = "A processar...";
+
+      try {
+        // 1) TENTATIVA PRINCIPAL → sendBeacon (não sofre CORS)
+        const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
+        enviado = navigator.sendBeacon(API_URL, blob);
+
+        console.log("sendBeacon enviado?", enviado);
+
+        // 2) FALLBACK → fetch(no-cors)
+        if (!enviado) {
+          console.warn("Fallback: a tentar fetch(no-cors)...");
+          await fetch(API_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
         }
 
-        document.getElementById("leadForm").addEventListener("submit", sendLead);
-    </script>
+        console.log("Lead enviada com sucesso (via beacon ou fetch).");
 
+        // Mostrar popup de sucesso
+        openSuccess();
+
+        // Reset do formulário
+        form.reset();
+
+      } catch (err) {
+        console.error("Erro no envio:", err);
+        alert("Erro ao enviar. Por favor tenta novamente.");
+      } finally {
+        // Restaurar botão
+        submitBtn.disabled = false;
+        submitBtn.classList.remove("loading");
+        submitBtn.innerHTML = submitBtnOriginalHTML;
+      }
+    });
+  </script>
+<script>
+  // Continuous right-moving carousel with 3/2/1 visible items and decorative dots
+  (function () {
+    const track = document.querySelector('.carousel-track');
+    const dotsContainer = document.querySelector('.carousel-dots');
+
+    if (!track || !dotsContainer) return;
+
+    const items = Array.from(track.querySelectorAll('.carousel-item'));
+
+// Pause on hover
+track.addEventListener('mouseenter', () => { speed = 0; });
+track.addEventListener('mouseleave', () => { speed = 100; });
+
+    if (items.length === 0) return;
+
+    // Duplicate items to allow seamless loop
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    // Create dots based on original number of images (decorative only)
+    const totalOriginal = items.length;
+    for (let i = 0; i < totalOriginal; i++) {
+      const dot = document.createElement('span');
+      if (i === 0) dot.classList.add('active');
+      dotsContainer.appendChild(dot);
+    }
+
+    // Continuous animation to the RIGHT
+    let offset = 0;
+    let lastTime = null;
+    let speed = 100;
+
+// Mobile drag control (M1)
+let isMobile = window.matchMedia("(max-width: 767px)").matches;
+let touchStartX = 0;
+let lastTouchX = 0;
+let dragging = false;
+
+if (isMobile) {
+  track.addEventListener('touchstart', e => {
+    dragging = true;
+    speed = 0; 
+    touchStartX = e.touches[0].clientX;
+    lastTouchX = touchStartX;
+  });
+
+  track.addEventListener('touchmove', e => {
+    if (!dragging) return;
+    const currentX = e.touches[0].clientX;
+    const delta = currentX - lastTouchX;
+    lastTouchX = currentX;
+    offset += delta; 
+    track.style.transform = `translateX(${offset}px)`;
+  });
+
+  track.addEventListener('touchend', e => {
+    dragging = false;
+    speed = 100; 
+  });
+}
+ // pixels per second – medium speed
+
+    function updateSize() {
+      // Called on resize to recalc loop length
+      const fullWidth = track.scrollWidth;
+      return fullWidth / 2; // width of original set (before duplication)
+    }
+
+    let loopWidth = 0;
+
+    function init() {
+      loopWidth = updateSize();
+      offset = -loopWidth; // start showing the second set so we can move to the right
+    }
+
+    function step(timestamp) {
+      if (!lastTime) lastTime = timestamp;
+      const dt = (timestamp - lastTime) / 1000; // seconds
+      lastTime = timestamp;
+
+      offset += speed * dt; // move to the right
+      if (offset >= 0) {
+        offset = -loopWidth;
+      }
+
+      track.style.transform = `translateX(${offset}px)`;
+      requestAnimationFrame(step);
+    }
+
+    // Recalculate on resize/orientation change
+    window.addEventListener('resize', () => {
+      const currentTransform = track.style.transform || 'translateX(0px)';
+      // keep relative position roughly similar, but recalc loopWidth
+      loopWidth = updateSize();
+      if (offset > 0) offset = -loopWidth;
+    });
+
+    init();
+    requestAnimationFrame(step);
+  })();
+</script>
+<button class="back-to-top" id="backToTop">↑</button>
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTop.style.display = "flex";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+<script>
+  (function () {
+    const section = document.querySelector('.testimonial-section');
+    if (!section) return;
+
+    const track = section.querySelector('.testimonial-track');
+    const slides = Array.from(section.querySelectorAll('.testimonial-slide'));
+    const prevBtn = section.querySelector('.arrow-left');
+    const nextBtn = section.querySelector('.arrow-right');
+    const dots = Array.from(section.querySelectorAll('.testimonial-dot'));
+    const windowEl = section.querySelector('.testimonial-window');
+
+    if (!track || slides.length === 0) return;
+
+    let index = 0;
+
+    function update() {
+      const width = windowEl.offsetWidth;
+      track.style.transform = 'translateX(' + (-index * width) + 'px)';
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      if (prevBtn) prevBtn.disabled = index === 0;
+      if (nextBtn) nextBtn.disabled = index === slides.length - 1;
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        if (index < slides.length - 1) {
+          index++;
+          update();
+        }
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        if (index > 0) {
+          index--;
+          update();
+        }
+      });
+    }
+
+    dots.forEach((dot) => {
+      dot.addEventListener('click', function () {
+        const target = parseInt(this.getAttribute('data-index'), 10);
+        if (!isNaN(target)) {
+          index = target;
+          update();
+        }
+      });
+    });
+
+    window.addEventListener('resize', update);
+    window.addEventListener('load', update);
+    update();
+  })();
+</script>
 </body>
 </html>
