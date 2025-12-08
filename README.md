@@ -1,11 +1,11 @@
 🟧 AWS Automated Lead & Email System for Pão Com Badjia
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=for-the-badge&logo=github)](https://mtferdi.github.io/AWS-Automated-Lead-Email-System-for-Pao-com-Badjia/)
+
 
 ### 🔗 Links Rápidos
 
 - 🌐 **Live Demo (GitHub Pages)**  
-  https://mtferdi.github.io/AWS-Automated-Lead-Email-System-for-Pao-com-Badjia/
+  https://www.paocombadjia.com
 
 - 📦 **Repositório GitHub**  
   https://github.com/MTFerdi/AWS-Automated-Lead-Email-System-for-Pao-com-Badjia
@@ -185,4 +185,5 @@ Creator of the Pão Com Badjia automated onboarding system.
 
 
 Feel free to connect or reach out for collaborations or similar projects.
+
 
